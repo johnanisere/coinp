@@ -1,24 +1,21 @@
 {
-  "name": "coinprofilemodule",
-  "version": "1.0.5",
-  "description": "Coinprofile Payment Gateway Module",
+  "name": "coinprofile",
+  "version": "1.2.4",
+  "description": "Coinprofile Payment Gateway",
   "main": "build/index.js",
-  "repository": "https://github.com/johnanisere/coinprofilepaymentmodule.git",
+  "repository": "https://github.com/johnanisere/coinp.git",
   "author": "coinprofile",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch  --mode=development",
-    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "jest"
   },
   "peerDependencies": {
     "react": "^16.11.0"
   },
   "dependencies": {
-    "jest": "^24.9.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "webpack": "^4.41.2",
+    "jsx-pragmatic": "^2.0.8",
     "zoid": "^9.0.36"
   },
   "devDependencies": {
@@ -28,9 +25,15 @@
     "@babel/preset-env": "^7.7.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "css-loader": "^3.2.0",
-    "style-loader": "^1.0.0",
-    "webpack-cli": "^3.3.10"
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
   },
   "keywords": [
     "coinprofile",

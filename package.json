@@ -1,18 +1,15 @@
 {
   "name": "coinprofile",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "Coinprofile Payment Gateway",
   "main": "build/index.js",
   "repository": "https://github.com/johnanisere/coinp.git",
   "author": "coinprofile",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack --watch  --mode=development",
+    "build": "webpack --mode=production",
     "test": "jest"
-  },
-  "peerDependencies": {
-    "react": "^16.11.0"
   },
   "dependencies": {
     "jsx-pragmatic": "^2.0.8",

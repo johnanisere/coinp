@@ -1,6 +1,6 @@
 {
   "name": "coinprofile",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Coinprofile Payment Gateway",
   "main": "build/index.js",
   "repository": "https://github.com/johnanisere/coinp.git",

@@ -52,27 +52,51 @@ const Widget = zoid.create({
       type: "string",
       default: () => "production",
     },
+    paymentType:{
+      type: "string",
+      required: true,
+    },
     username: {
       type: "string",
       required: true,
     },
-    amount: {
+    incomingAmount: {
       type: "number",
       required: true,
     },
-    currency: {
+    outgoingCurrency: {
       type: "string",
       required: true,
     },
-    email: {
+    customerEmail: {
       type: "string",
       required: true,
     },
-    selectedCurrency: {
+    incomingCurrency: {
       type: "string",
       required: false,
     },
     transactionId: {
+      type: "string",
+      required: false,
+    },
+    country:{
+      type: "string",
+      required: false,
+    },
+    accountNumber:{
+      type: "string",
+      required: false,
+    },
+    accountName:{
+      type: "string",
+      required: false,
+    },
+    bank:{
+      type: "string",
+      required: false,
+    },
+    bankCode:{
       type: "string",
       required: false,
     },

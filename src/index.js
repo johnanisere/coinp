@@ -76,6 +76,10 @@ const Widget = zoid.create({
       type: "string",
       required: false,
     },
+    rateKey: {
+      type: "string",
+      required: false,
+    },
     onFinalise: {
       type: "function",
       required: false,

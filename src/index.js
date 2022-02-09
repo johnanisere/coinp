@@ -60,6 +60,14 @@ const Widget = zoid.create({
       type: "string",
       required: true,
     },
+    businessId:{
+      type: "string",
+      required: true,
+    },
+    customerUsername:{
+      type: "string",
+      required: true,
+    },
     incomingAmount: {
       type: "number",
       required: true,

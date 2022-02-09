@@ -56,15 +56,11 @@ const Widget = zoid.create({
       type: "string",
       required: true,
     },
-    username: {
+    recipientUsername: {
       type: "string",
       required: true,
     },
     businessId:{
-      type: "string",
-      required: true,
-    },
-    customerUsername:{
       type: "string",
       required: true,
     },

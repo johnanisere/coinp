@@ -109,10 +109,14 @@ const Widget = zoid.create({
       type: "string",
       required: false,
     },
-    onFinalise: {
+    onFinalise:{
       type: "function",
       required: false,
     },
+    other:{
+      type: 'object',
+      serialization: 'json'
+    }
   },
 });
 

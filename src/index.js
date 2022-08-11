@@ -13,7 +13,7 @@ const Widget = zoid.create({
       dev: "http://localhost:3004",
       staging: "https://staging.paymentgateway.coinprofile.co/",
       production: "https://paymentgateway.coinprofile.co/",
-      alpha: "https://alpha-paymentgateway.coinprofile.co/"
+      alpha: "https://alpha-paymentgateway.coinprofile.co/",
     }[props.env];
   },
   containerTemplate: function containerTemplate({
@@ -53,7 +53,7 @@ const Widget = zoid.create({
       type: "string",
       default: () => "production",
     },
-    paymentType:{
+    paymentType: {
       type: "string",
       required: true,
     },
@@ -61,7 +61,7 @@ const Widget = zoid.create({
       type: "string",
       required: true,
     },
-    businessId:{
+    businessId: {
       type: "string",
       required: true,
     },
@@ -85,23 +85,23 @@ const Widget = zoid.create({
       type: "string",
       required: false,
     },
-    country:{
+    country: {
       type: "string",
       required: false,
     },
-    accountNumber:{
+    accountNumber: {
       type: "string",
       required: false,
     },
-    accountName:{
+    accountName: {
       type: "string",
       required: false,
     },
-    bank:{
+    bank: {
       type: "string",
       required: false,
     },
-    bankCode:{
+    bankCode: {
       type: "string",
       required: false,
     },
@@ -109,14 +109,19 @@ const Widget = zoid.create({
       type: "string",
       required: false,
     },
-    onFinalise:{
+    onFinalise: {
       type: "function",
       required: false,
     },
-    other:{
-      type: 'object',
-      serialization: 'json'
-    }
+    version: {
+      type: "string",
+      required: false,
+    },
+    other: {
+      type: "object",
+      serialization: "json",
+      required: false,
+    },
   },
 });
 
